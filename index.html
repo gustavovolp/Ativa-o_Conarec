@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selbetti | Central de Missões — FEBRABAN TECH 2026</title>
+<title>Selbetti | Central de Missões — Conarec 2026</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -810,7 +810,7 @@ h2.mission-title{
             <div class="core"></div>
         </div>
 
-        <div class="eyebrow-mono">FEBRABAN 2026</div>
+        <div class="eyebrow-mono">CONAREC 2026</div>
 
         <h1 class="mission-title">
             BEM-VINDO À<br>
@@ -868,55 +868,33 @@ h2.mission-title{
 
             <div class="mission-grid">
 
-                <div class="mission-card" data-mission="Dados" data-icon="database">
-                    <span class="mission-index">01 / DADOS</span>
-                    <span class="material-symbols-outlined mission-icon">database</span>
-                    <strong>Dados</strong>
-                    <p>Dados confiáveis para decidir melhor.</p>
+                <div class="mission-card" data-mission="Conecte a jornada" data-icon="forum">
+                    <span class="mission-index">Missão: Conecte a jornada.</span>
+                    <span class="material-symbols-outlined mission-icon">forum</span>
+                    <strong>Conversar</strong>
+                    <p>Meus clientes estão em diferentes canais, mas minha operação não consegue acompanhar essa conversa de ponta a ponta</p>
                 </div>
 
-                <div class="mission-card" data-mission="IA" data-icon="smart_toy">
-                    <span class="mission-index">02 / IA</span>
-                    <span class="material-symbols-outlined mission-icon">smart_toy</span>
-                    <strong>IA</strong>
-                    <p>Escalar inteligência com segurança.</p>
+                <div class="mission-card" data-mission="Faça a operação fluir" data-icon="hub">
+                    <span class="mission-index">Missão: Faça a operação fluir.</span>
+                    <span class="material-symbols-outlined mission-icon">hub</span>
+                    <strong>Conectar & Executar</strong>
+                    <p>Tenho sistemas e processos, mas eles não conversam entre si como deveriam.</p>
                 </div>
 
-                <div class="mission-card" data-mission="Regulação" data-icon="gavel">
-                    <span class="mission-index">03 / REGULAÇÃO</span>
-                    <span class="material-symbols-outlined mission-icon">gavel</span>
-                    <strong>Regulação</strong>
-                    <p>Evoluir sem perder conformidade.</p>
+                <div class="mission-card" data-mission="Proteja a jornada" data-icon="security">
+                    <span class="mission-index">Missão: Proteja a jornada.</span>
+                    <span class="material-symbols-outlined mission-icon">security</span>
+                    <strong>Proteger</strong>
+                    <p>Preciso ampliar o uso de dados e IA sem comprometer segurança, privacidade e conformidade.</p>
                 </div>
 
-                <div class="mission-card" data-mission="Eficiência" data-icon="bolt">
-                    <span class="mission-index">04 / EFICIÊNCIA</span>
-                    <span class="material-symbols-outlined mission-icon">bolt</span>
-                    <strong>Eficiência</strong>
-                    <p>Automatizar o que trava a operação.</p>
+                <div class="mission-card" data-mission="Transforme conversa em decisão" data-icon="insights">
+                    <span class="mission-index">Missão: Transforme conversa em decisão.</span>
+                    <span class="material-symbols-outlined mission-icon">insights</span>
+                    <strong>Aprender & Decidir</strong>
+                    <p>Tenho milhares de interações e dados, mas ainda é difícil transformar tudo isso em inteligência para a operação.</p>
                 </div>
-
-                <div class="mission-card" data-mission="Experiência" data-icon="support_agent">
-                    <span class="mission-index">05 / EXPERIÊNCIA</span>
-                    <span class="material-symbols-outlined mission-icon">support_agent</span>
-                    <strong>Experiência</strong>
-                    <p>Conectar tecnologia e cliente.</p>
-                </div>
-
-                <div class="mission-card" data-mission="Segurança" data-icon="shield_lock">
-                    <span class="mission-index">06 / SEGURANÇA</span>
-                    <span class="material-symbols-outlined mission-icon">shield_lock</span>
-                    <strong>Segurança</strong>
-                    <p>Proteger cada camada da operação.</p>
-                </div>
-
-                <div class="mission-card" data-mission="ESG" data-icon="recycling">
-                    <span class="mission-index">07 / ESG</span>
-                    <span class="material-symbols-outlined mission-icon">recycling</span>
-                    <strong>ESG</strong>
-                    <p>Evoluir com eficiência e responsabilidade.</p>
-                </div>
-
             </div>
 
             <div class="cta-row">
@@ -1018,63 +996,17 @@ h2.mission-title{
 
         <div id="specialistsList" class="specialists-list"></div>
 
-        <div class="cta-row">
-            <button class="cta" onclick="showScreen('radarScreen')">
-                <span class="material-symbols-outlined" style="font-size:18px;">casino</span>
-                GIRAR ROLETA
+        <div class="cta-row" style="margin-top:40px;">
+            <button class="cta ghost" onclick="reiniciarJornada()">
+                <span class="material-symbols-outlined" style="font-size:18px;">restart_alt</span>
+                RECOMEÇAR JORNADA
             </button>
         </div>
 
     </section>
 
 
-    <!-- ==========================
-    ROLETA (PRÊMIO)
-    =========================== -->
-
-    <section id="radarScreen" class="screen" style="text-align:center;">
-
-        <div class="eyebrow-mono">RECOMPENSA DA MISSÃO</div>
-
-        <h2 class="mission-title">
-            GIRE E DESCUBRA <span class="accent">SEU PRÊMIO</span>
-        </h2>
-
-        <p class="hero-sub">
-            Você concluiu sua missão. Gire a roleta e descubra a recompensa.
-        </p>
-
-        <div class="wheel-hud-container">
-
-            <div class="wheel-hud-pointer"></div>
-
-            <div class="wheel-hud" id="prizeWheel"></div>
-
-            <div class="wheel-hud-center"></div>
-
-        </div>
-
-        <div class="cta-row">
-            <button class="cta" id="scanBtn" onclick="spinPrizeWheel()">
-                <span class="material-symbols-outlined" style="font-size:18px;">casino</span>
-                GIRAR ROLETA
-            </button>
-        </div>
-
-        <div id="prizeResult" class="prize-result">
-            <div class="eyebrow-mono">ALVO CONFIRMADO</div>
-            <h3 id="prizeName"></h3>
-            <p>Apresente esta tela para nossa equipe e retire seu prêmio.</p>
-
-            <div class="cta-row" style="margin-top:20px;">
-                <button class="cta ghost" onclick="resetMission()">
-                    FINALIZAR MISSÃO
-                </button>
-            </div>
-        </div>
-
-    </section>
-
+    
     </main>
 
     <div class="footer-bar">
@@ -1090,7 +1022,7 @@ h2.mission-title{
 CONFIG - PLANILHA ONLINE
 =========================== */
 
-const SHEET_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbzBHudiJuTml0SUa1Hh4NhnSgqJE5sWpk7lA30OQbPRDDIuHWV4ZH7H_Q5rnk0yQIE/exec";
+const SHEET_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbxz7bmo-AvvjW3n3lR2TIZCZZCf2qBYuMe1APu-utugF4uluPh7NePP0RMIN54ZxQ/exec";
 
 /* ==========================
 NAVEGAÇÃO ENTRE TELAS
@@ -1106,13 +1038,10 @@ CORRELAÇÃO MISSÃO x ESPECIALISTA
 =========================== */
 
 const missionSpecialists = {
-    "Dados":        { nome: "Igor Bastos Martins", area: "Data", foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/igor%20bastos%20martins.jpg' },
-    "IA":           { nome: "Igor Bastos Martins",  area: "Data", foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/igor%20bastos%20martins.jpg'},
-    "Regulação":    { nome: "Juscimar Teixeira",   area: "Process / Business",  foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/Juscimar%20Teixeira.jpg'},
-    "Eficiência":   { nome: "Juscimar Teixeira",   area: "Process / Business",  foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/Juscimar%20Teixeira.jpg'},
-    "Experiência":  { nome: "Fabiano Amorim",      area: "CX",  foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/Fabiano%20Amorim.jpg'},
-    "Segurança":    { nome: "Gustavo Nascimento",  area: "Cyber",  foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/Gustavo%20nascimento.jpg'},
-    "ESG":            { nome: "Rodrigo Aquino",  area: "Print",  foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/Rodrigo%20aquino.jpg'}
+    "Conecte a jornada":        { nome: "Guilherme Sousa", area: "Missão: Conecte a jornada.", foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/igor%20bastos%20martins.jpg' },
+    "Faça a operação fluir":   { nome: "Guilherme Sousa", area: "Missão: Faça a operação fluir.", foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/igor%20bastos%20martins.jpg' },
+    "Proteja a jornada":        { nome: "Guilherme Sousa", area: "Missão: Proteja a jornada.", foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/igor%20bastos%20martins.jpg' },
+    "Transforme conversa em decisão": { nome: "Guilherme Sousa", area: "Missão: Transforme conversa em decisão.", foto: 'https://50574803.fs1.hubspotusercontent-na1.net/hubfs/50574803/11%20-%20Eventos/Febraban26/igor%20bastos%20martins.jpg' }
 };
 
 function renderSpecialists(){
@@ -1260,86 +1189,78 @@ function submitLead(){
     errorEl.style.display = "none";
     leadData = { nome, sobrenome, empresa, cargo, email, telefone };
 
+    enviarParaPlanilha();
+
     renderSpecialists();
     showScreen('resultScreen');
+
 }
 
 /* ==========================
-LÓGICA DA ROLETA (3 CORES / 3 PRÊMIOS)
+ENVIO PARA GOOGLE SHEETS
 =========================== */
 
-let currentRotation = 0;
-let hasSpun = false;
-
-function spinPrizeWheel(){
-    if(hasSpun) return;
-
-    const scanBtn = document.getElementById('scanBtn');
-    scanBtn.disabled = true;
-    hasSpun = true;
-
-    // 3 prêmios distribuídos nas 3 seções de 120 graus cada
-    const prizes = [
-        { name: "Cordão de Celular", color: "Verde Selbetti" },
-        { name: "Caneta", color: "Verde Claro" },
-        { name: "Meia Selbetti", color: "Laranja Sinal" }
-    ];
-
-    const randomIndex = Math.floor(Math.random() * prizes.length);
-    const selectedPrize = prizes[randomIndex];
-
-    // Calcula a rotação para alinhar com o ponteiro topo (360 / 3 = 120 deg cada fatia)
-    const sliceAngle = 120;
-    const targetAngle = 355 - (randomIndex * sliceAngle + sliceAngle / 2);
-    const totalSpin = 1800 + targetAngle; // 5 voltas completas + alinhamento
-
-    currentRotation += totalSpin;
-    const wheel = document.getElementById('prizeWheel');
-    wheel.style.transform = `rotate(${currentRotation}deg)`;
-
-    setTimeout(() => {
-        document.getElementById('prizeName').innerText = selectedPrize.name;
-        document.getElementById('prizeResult').style.display = 'block';
-
-        // Envia os dados para a planilha
-        sendToSheet(selectedPrize.name);
-    }, 4200);
-}
-
-function sendToSheet(prizeName){
-    if(!SHEET_ENDPOINT_URL) return;
+function enviarParaPlanilha(){
 
     const payload = {
-        timestamp: new Date().toISOString(),
-        ...leadData,
-        missao: selectedMissions.join(', '),
-        premio: prizeName
+        nome: leadData.nome,
+        sobrenome: leadData.sobrenome,
+        empresa: leadData.empresa,
+        cargo: leadData.cargo,
+        email: leadData.email,
+        telefone: leadData.telefone,
+        missao: selectedMissions.join(' | '),
+        dataHora: new Date().toLocaleDateString('pt-BR') // formato dd/mm/aaaa
+        // 'premio' não é enviado — a coluna correspondente foi removida da planilha
     };
 
+    // 'no-cors' é necessário porque o Apps Script Web App não retorna
+    // cabeçalhos CORS. A resposta fica opaca (não dá pra ler status/JSON),
+    // mas a requisição ainda é entregue e processada normalmente
+    // do lado do Apps Script, que é quem grava na planilha.
     fetch(SHEET_ENDPOINT_URL, {
         method: 'POST',
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+            'Content-Type': 'text/plain;charset=utf-8'
+        },
         body: JSON.stringify(payload)
-    }).catch(err => console.error("Erro ao enviar para a planilha:", err));
-}
-
-function resetMission(){
-    hasSpun = false;
-    selectedMissions = [];
-    document.getElementById('scanBtn').disabled = false;
-    document.getElementById('prizeResult').style.display = 'none';
-    
-    // Limpa campos do formulário
-    ['leadNome','leadSobrenome','leadEmpresa','leadCargo','leadEmail','leadTelefone'].forEach(id=>{
-        document.getElementById(id).value = "";
+    }).catch(err=>{
+        console.error('Erro ao enviar lead para a planilha:', err);
     });
 
+}
+/* ==========================
+REINICIAR JORNADA
+=========================== */
+
+function reiniciarJornada(){
+
+    // Limpa a missão selecionada
+    selectedMissions = [];
     missionCards.forEach(c => c.classList.remove('selected'));
     startBtn.disabled = true;
     missionLabel.innerText = "NENHUMA MISSÃO SELECIONADA";
 
+    // Limpa os dados e campos do formulário
+    leadData = { nome:"", sobrenome:"", empresa:"", cargo:"", email:"", telefone:"" };
+
+    ['leadNome','leadSobrenome','leadEmpresa','leadTelefone'].forEach(id=>{
+        document.getElementById(id).value = "";
+        document.getElementById(id).classList.remove('invalid');
+    });
+
+    document.getElementById('leadCargo').selectedIndex = 0;
+    document.getElementById('leadCargo').classList.remove('invalid');
+    document.getElementById('leadEmail').value = "";
+    document.getElementById('leadEmail').classList.remove('invalid');
+    document.getElementById('leadError').style.display = "none";
+
+    // Limpa o resultado exibido
+    document.getElementById('specialistsList').innerHTML = "";
+
     showScreen('introScreen');
+
 }
 
 </script>
